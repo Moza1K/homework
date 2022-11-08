@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -42,10 +46,7 @@ a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 180px;
-}
-
-.section_1{
+    padding: 130px 0 180px;
     text-align: center;
 }
 
@@ -54,7 +55,6 @@ a{
     font-size: 72px;
     line-height: 98px;
     color: #FFFFFF;
-    padding: 138px 0 0;
     margin-bottom: 14px;
 }
 
@@ -67,11 +67,13 @@ a{
     font-size: 36px;
     line-height: 49px;
     color: #162C38;
+    border: none;
 }
 
 .section_2{
     text-align: center;
     background: rgba(26, 110, 136, 0.71);
+    padding: 133px 0;
 }
 
 .section_2_text{
@@ -82,7 +84,6 @@ a{
     color: #FFFFFF;
     max-width: 726px;
     margin: 0 auto;
-    padding: 133px 0;
 }
 
 .item{
@@ -92,25 +93,33 @@ a{
     background: #BFDEFB;
 }
 
+.section_3{
+    position: relative;
+}
+
 .section_3_text{
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    max-width: 650px;
+    max-width: 696px;
     margin: 221px auto 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .item_1{
-    top: 1259px;
+    position: absolute;
+    top: -121px;
 }
 
 .item_2{
-    top: 1505px;
+    position: absolute;
+    top: 135px;
 }
 
 .item_3{
-    top: 1394;
+    position: absolute;
+    top: 14px;
     right: 0;
 }
 
@@ -119,9 +128,10 @@ a{
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    max-width: 650px;
+    max-width: 696px;
     margin: 213px auto 0;
     position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
 .section_4_text::before{
@@ -129,7 +139,7 @@ a{
     position: absolute;
     width: 58px;
     height: 58px;
-    border-radius: 58px;
+    border-radius: 50%;
     background: #5C98AB;
     top: -56px;
     left: -30px;
@@ -140,7 +150,7 @@ a{
     position: absolute;
     width: 120px;
     height: 120px;
-    border-radius: 120px;
+    border-radius: 50%;
     background: #BFDEFB;
     right: -152px;
 }
@@ -158,6 +168,10 @@ a{
     border-radius: 4px;
     padding: 36px 0 11px 31px;
     box-sizing: border-box;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
 }
 
 .input::placeholder{
