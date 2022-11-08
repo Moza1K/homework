@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -42,10 +46,7 @@ a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 180px;
-}
-
-.section_1{
+    padding: 130px 0 180px;
     text-align: center;
 }
 
@@ -54,7 +55,6 @@ a{
     font-size: 72px;
     line-height: 98px;
     color: #FFFFFF;
-    padding: 138px 0 0;
     margin-bottom: 14px;
 }
 
@@ -67,11 +67,13 @@ a{
     font-size: 36px;
     line-height: 49px;
     color: #162C38;
+    border: none;
 }
 
 .section_2{
     text-align: center;
     background: rgba(26, 110, 136, 0.71);
+    padding: 133px 0;
 }
 
 .section_2_text{
@@ -82,6 +84,5 @@ a{
     color: #FFFFFF;
     max-width: 726px;
     margin: 0 auto;
-    padding: 133px 0;
 }
 
