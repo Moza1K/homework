@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="stayl/stail.css">
+    <link rel="stylesheet" href="./stayl/carusel.css">
 </head>
 <body>
     <header class="header">
@@ -26,15 +28,15 @@
                 </div>
             </div>
             <div class="menu">
-                <input type="checkbox" class="header_checkbox">
+                <input checked type="checkbox" class="header_checkbox">
                 <div class="check-wrapper">
                     <div class="check"></div>
                     <div class="check"></div>
                     <div class="check"></div>
                 </div>
                 </div> 
-                <nav class="header_naw flex">
-                    <ul class="header_ul flex">
+                <div class="header_naw flex">
+                    <ul class="header_ul flex flex_menu">
                         <li class="header_li">
                             <a class="header_link" href="#">Home</a>
                         </li>
@@ -45,7 +47,7 @@
                     <button class="header_button ">
                         Get Started
                     </button>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -61,7 +63,7 @@
             <button class="button button-blue">
                 Get Started
             </button>
-            <button class="button">
+            <button class="button" id="open-modal">
                 Learn More
             </button>
         </div>
@@ -89,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="logos container ">
+    <section class="logos container logos1">
         <div>
             <img class="logos_image" src="./img/logos/Bitmap.svg" alt="logo">
         </div>
@@ -108,6 +110,62 @@
         <div >
             <img class="logos_image" src="./img/logos/Bitmap (5).svg" alt="logo">
         </div>
+    </section>
+    <section class="section3">
+        <img class="section3-img" src="./img/section_3/ouch.svg" alt="img">
+        
+        <div class="container">
+            <div class="info">
+                <p class="info_pretitle info_pretitle-grin">
+                    Features
+                </p>
+                <h3 class="info_title">
+                    Easily find leads and customers
+                </h3>
+                <p class="info_text">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+            </div>
+            <div class="section3_blok">
+                <div class="section3-items">
+                    <div class="flex section3-flex">
+                        <img src="./img/section_3/Icon (2).svg" alt="img">
+                        <h6 class="section3_title">
+                            Acquire new customers
+                        </h6>
+                    </div>
+                    <p class="section3_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                    <div class="item2"></div>
+                </div>
+                <div class="section3-items">
+                    <div class="flex section3-flex">
+                        <img src="./img/section_3/Icon (3).svg" alt="img">
+                        <h6 class="section3_title">
+                            Engage users
+                        </h6>
+                    </div>
+                    <p class="section3_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                    <div class="item2"></div>
+                </div>
+                <div class="section3-items">
+                    <div class="flex section3-flex">
+                        <img src="./img/section_3/Icon (4).svg" alt="img">
+                        <h6 class="section3_title">
+                            Develop across platforms
+                        </h6>
+                    </div>
+                    <p class="section3_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                    <div class="item2"></div>
+                </div>
+            </div>
+        </div>
+        <img class="section3-image" src="./img/section_3/Invision Screen.png" alt="img">
     </section>
     <section class="section4">
         <div class="container flex flex_section4-column">
@@ -239,6 +297,140 @@
             </a>
         </div>
     </section>
+    <section class="logos container logos2">
+        <div>
+            <img class="logos_image" src="./img/logos/Bitmap.svg" alt="logo">
+        </div>
+        <div>
+            <img class="logos_image" src="./img/logos/Bitmap (1).svg" alt="logo">
+        </div>
+        <div>
+            <img class="logos_image" src="./img/logos/Bitmap (2).svg" alt="logo">
+        </div>
+        <div>
+            <img class="logos_image" src="./img/logos/Bitmap (3).svg" alt="logo">
+        </div>
+        <div>
+            <img class="logos_image" src="./img/logos/Bitmap (4).svg" alt="logo">
+        </div>
+        <div >
+            <img class="logos_image" src="./img/logos/Bitmap (5).svg" alt="logo">
+        </div>
+    </section>
+    <section class="section7">
+        <div class="carusel">
+            <div>
+                <h6 class="section7_title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h6>
+                <p class="section7_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="section7_name">
+                    Viella Malkovich 
+                </p>
+                <p class="section7_profesion">
+                    Creative Director at Johnson
+                </p>
+            </div>
+            <div>
+                <h6 class="section7_title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h6>
+                <p class="section7_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquid illum eaque minima consectetur amet!
+                </p>
+                <p class="section7_name">
+                    Viella Malkovich 
+                </p>
+                <p class="section7_profesion">
+                    Creative Director at Johnson
+                </p>
+            </div>
+            <div>
+                <h6 class="section7_title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h6>
+                <p class="section7_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat beatae dignissimos blanditiis dolores fugit voluptatum iste vero sunt accusantium!
+                </p>
+                <p class="section7_name">
+                    Viella Malkovich 
+                </p>
+                <p class="section7_profesion">
+                    Creative Director at Johnson
+                </p>
+            </div>
+        </div>
+        <img class="section7_image" src="./img/section_7/ouch.svg" alt="img">
+        <div class="item3"></div>
+    </section>
+    <section class="container section8">
+        <div class="section8_block">
+            <h2 class="section8_title">
+                We’re hiring
+            </h2>
+            <p class="section8_text">
+                We’re a team of lifelong learners. We’re equal parts left and right brained.
+            </p>
+            <button class="button button-blue section8_button">
+                More about Company
+            </button>
+        </div>
+        <div>
+            <div class="section8-items">
+                <div class="flex">
+                    <p class="items_title">
+                        Front-End Developer
+                    </p>
+                    <p class="items_text">
+                        Los Angeles / Remote
+                    </p>
+                    <p class="items-icon">
+                        >
+                    </p>
+                </div>
+                <p class="section8-items_text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+            <div class="section8-items">
+                <div class="flex ">
+                    <p class="items_title">
+                        Community Manager
+                    </p>
+                    <p class="items_text">
+                        New York / Full-Time
+                    </p>
+                    <p class="items-icon">
+                        >
+                    </p>
+                </div>
+                <p class="section8-items_text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+            <div class="section8-items">
+                <div class="flex ">
+                    <p class="items_title">
+                        UX/UI Designer
+                    </p>
+                    <p class="items_text">
+                        New York / Full-Time
+                    </p>
+                    <p class="items-icon">
+                        >
+                    </p>
+                </div>
+                <p class="section8-items_text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+        </div>
+        <form>
+
+        </form>
+    </section>
     <section class="section9 container">
         <h2 class="section9_title">
             All Surfaces Covered
@@ -268,7 +460,7 @@
                 <p class="section10_text">
                     Get notified about company updates, news and blog posts. We hate spam.
                 </p>
-                <form class="flex_section10-column">
+                <form class="section10_form">
                     <input class="section10_input" placeholder="Enter your email" type="email">
                     <button class="button button-blue button-big">
                         Get Started
@@ -282,5 +474,88 @@
             </div>
         </div>
     </section>
+    <footer class="container footer">
+        <div class="flex  footer_naw">
+            <div>
+                <div class="footer_logo flex">
+                    <img src="./img/footer/Icon (1).svg" alt="logo">
+                    <div>
+                        <h6 class="logo_title logo_title-footer">
+                            Foundation
+                        </h6>
+                        <p class="logo_text logo_text-footer">
+                            Startup landing template
+                        </p>
+                    </div>
+                </div>
+                <p class="footer_text">
+                    Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                </p>
+                <div >
+                    <form>
+                        <button class="footer_button1">
+
+                        </button>
+                        <button class="footer_button2">
+
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="item1"></div>
+            <div class="futer-centr">
+                <h6 class="footer_title">
+                    Product
+                </h6>
+                <ul class="footer_ul">
+                    <li class="footer_li">Acquire Users</li>
+                    <li class="footer_li">Content Marketing</li>
+                    <li class="footer_li">Website Templates</li>
+                    <li class="footer_li">Customer Management</li>
+                    <li class="footer_li">Virtual Inbox</li>
+                </ul>
+            </div>
+            <div class="futer-centr">
+                <h6 class="footer_title">
+                    Company
+                </h6>
+                <ul class="footer_ul">
+                    <li class="footer_li">About Foundation</li>
+                    <li class="footer_li">Brand Guidelines</li>
+                    <li class="footer_li">Press Kit</li>
+                    <li class="footer_li">Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item"></div>
+        <nav class="flex flex_footer">
+            <ul class="flex footer_nav2">
+                <li class="footer_li">Terms</li>
+                <li class="footer_li">Privacy</li>
+                <li class="footer_li">License</li>
+            </ul>
+            <div>
+                <img class="footer_img" src="./img/footer/icon-twitter.svg" alt="twitter">
+                <img class="footer_img" src="./img/footer/icon-fb.svg" alt="fb">
+                <img class="footer_img" src="./img/footer/LinkedIn.svg" alt="LI">
+            </div>
+        </nav>
+    </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum eius sint esse explicabo. Laborum minima unde maiores totam nisi.
+            </p>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./script/bxslider.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 </html>

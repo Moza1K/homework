@@ -1,0 +1,15 @@
+.bx-wrapper{
+    border: none;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(43, 41, 45, 0.2);;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: #3142C5;
+}
